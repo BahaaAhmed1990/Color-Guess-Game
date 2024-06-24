@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color guess</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- head -->
+    <header>
+      <div class="clr-code">
+        <h3>guess the color</h3>
+        <h1 class="question-clr">RGB(205,78,90)</h1>
+      </div>
+      <div class="controls-btn">
+        <button id="new-clr">new color</button>
+        <div class="stats">
+          <button id="trial">
+            Tries Left : <span class="count-trial"></span>
+          </button>
+          <button id="questions">
+            total number of question &nbsp;
+            <span class="correct-questions"></span>&nbsp;/&nbsp;
+            <span class="total-questions"></span>
+          </button>
+        </div>
+        <div>
+          <button class="question-state" id="hard-question">Hard</button>
+          <button class="question-state active" id="easy-question">Easy</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="alert alert-success">Right Answer</div>
+      <div class="alert alert-fail">Wrong Answer. Try Again</div>
+
+      <div class="answers-container">
+        <div class="answer answer-1"></div>
+        <div class="answer answer-2"></div>
+        <div class="answer answer-3"></div>
+        <div class="answer answer-4"></div>
+        <div class="answer answer-5"></div>
+        <div class="answer answer-6"></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

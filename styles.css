@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: azure;
+  background-color: #222;
+  font-family: "Courier New", Courier, monospace;
+}
+header {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+h1 {
+  text-transform: uppercase;
+}
+.controls-btn {
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  border: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 0.5em 1em;
+  background: none;
+  cursor: pointer;
+}
+#new-clr,
+.question-state.active {
+  background-color: lightskyblue;
+}
+
+main {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+}
+.alert {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert-success {
+  display: none;
+}
+.alert-fail {
+  display: none;
+}
+.answers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 30px;
+}
+.answer {
+  border-radius: 50%;
+  cursor: pointer;
+}
